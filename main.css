@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: calc(100% - 80px);
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #0044d4d4;
+    padding: 15px 0;
+}
+
+.header a {
+    color: #fff;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.users {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+.users table {
+    width: 100%;
+    background-color: #fff;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.users thead {
+    background-color: #0044d4d4;
+}
+
+.users td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 20px;
+}
+
+.users th {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 20px;
+}
+
+.users tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.delete {
+
+    border: 2px solid rgba(255, 0, 0, 6);
+    color: rgba(255, 0, 0, 6);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.detials {
+
+    border: 2px solid rgba(0, 0, 255, 6);
+    color: rgba(0, 0, 255, 6);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.edit {
+    border: 2px solid rgba(0, 255, 0, 6);
+    color: rgba(0, 255, 0, 6);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+
+.btn {
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 30px;
+    padding-bottom: 8px;
+    background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
+    animation: l2 2s linear infinite;
+    color: #0044d4d4;
+
+}
+
+.loader:before {
+    content: "Loading..."
+
+}
+
+@keyframes l2 {
+    to {
+        background-size: 100% 3px
+    }
+}
+
+.d-none {
+    display: none !important;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
